@@ -11,3 +11,8 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: $black;
+  background-image: linear-gradient(180deg,#14181c 0,#14181c 250px,#2c3440 251px);
+}

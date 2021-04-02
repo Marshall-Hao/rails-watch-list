@@ -1,0 +1,15 @@
+<h1>
+  <% @lists.each do |list| %>
+    <%= link_to list.name, new_list_bookmark_path(list) %>
+  <% end %>
+</h1>
+
+<div class="backdrop-container">
+  <div id="backdrop" class="backdrop-wrapper  -loaded" data-backdrop="https://a.ltrbxd.com/resized/sm/upload/aj/h8/ku/9n/blade-runner-2049-1200-1200-675-675-crop-000000.jpg?k=aae914174e" data-backdrop2x="https://a.ltrbxd.com/resized/sm/upload/aj/h8/ku/9n/blade-runner-2049-1920-1920-1080-1080-crop-000000.jpg?k=aae914174e" data-backdropmobile="https://a.ltrbxd.com/resized/sm/upload/aj/h8/ku/9n/blade-runner-2049-960-960-540-540-crop-000000.jpg?k=6833d51a7b" data-offset="80">
+    <div class="backdropplaceholder js-backdrop-placeholder" style="background-image: url(https://a.ltrbxd.com/resized/sm/upload/aj/h8/ku/9n/blade-runner-2049-48-48-27-27-crop.png?k=9f70d4fc3b); background-position: center -80px;">
+    </div>
+    <div class="backdropimage js-backdrop-image" style="background-position: center -80px; background-image: url(&quot;https://a.ltrbxd.com/resized/sm/upload/aj/h8/ku/9n/blade-runner-2049-1920-1920-1080-1080-crop-000000.jpg?k=aae914174e&quot;);">
+    </div>
+    <div class="backdropmask js-backdrop-fade"></div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<h2>
+<% @list.movies.each do |m|%>
+<%= m.title %>
+<%= m.overview %>
+<%= m.rating %>
+<% end %>
+<% @list.bookmarks.each do |b| %>
+  <%= b.comment%>
+  <%= link_to 'delete', bookmark_path(b), method: :delete, data: { confirm: 'Delete this review?' }  %>
+<% end %>
+</h2>
