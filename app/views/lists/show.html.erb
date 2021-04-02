@@ -1,4 +1,4 @@
-<h2>
+<!-- <h2>
 <% @list.movies.each do |m|%>
 <%= m.title %>
 <%= m.overview %>
@@ -8,4 +8,20 @@
   <%= b.comment%>
   <%= link_to 'delete', bookmark_path(b), method: :delete, data: { confirm: 'Delete this review?' }  %>
 <% end %>
-</h2>
+</h2> -->
+<div class="cards show-page">
+  <% @list.movies.each do |m|%>
+  <div class="card-trip">
+    <%= image_tag m.poster_url, alt: "movie poster" %>
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= m.title %></h2>
+      <p><%= m.overview %></p>
+    </div>
+    <h2 class="card-trip-pricing"><%= m.rating %></h2>
+  </div>
+</div>
+ <% end %>
+</div>
+
+

@@ -1,4 +1,13 @@
+<div class="banner new-list-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg);">
+</div>
+<div class="container new-list col-12 col-lg-4">
 <%= simple_form_for(@list) do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
+  <div class="form-inputs">
+    <%= f.input :name,label: 'Creat a movie list:', placeholder:"give a list for movie collection" %>
+  </div>
+
+  <div class="form-actions btn btn-blue">
+    <%= f.button :submit %>
+  </div>
 <% end %>
+</div>
