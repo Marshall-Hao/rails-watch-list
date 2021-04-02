@@ -1,5 +1,13 @@
+<div class="banner new-list-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/halloween-movies-1600459548.jpg);">
+</div>
+<div class="container new-list col-12 col-lg-4">
 <%= simple_form_for [ @list, @bookmark ] do |f| %>
+<div class="form-inputs">
     <%= f.input :comment %>
     <%= f.association :movie, collection: Movie.all %>
+</div>
+ <div class="form-actions btn btn-blue">
     <%= f.button :submit %>
+</div>
 <% end %>
+</div>
